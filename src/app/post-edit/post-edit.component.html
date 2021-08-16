@@ -1,0 +1,17 @@
+<h2>Post Add</h2>
+<form [formGroup]="form" >
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control" formControlName="title" />
+  </div>
+  <div class="form-group">
+    <label>Description</label>
+    <textarea class="form-control" formControlName="description"> </textarea>
+  </div>
+  <div class="form-group">
+    <label>Image path</label>
+    <input type="text" class="form-control" formControlName="imagePath" />
+  </div>
+  <button class="btn btn-success" (click)="onSubmit()">Save</button> |
+  <button class="btn btn-primary">Clear</button>
+</form>
